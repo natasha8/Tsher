@@ -12,7 +12,10 @@ dist
 dist-ssr
 *.local
 pnpm-lock.yaml
+
+.env.local
 .env
+env
 
 
 # Editor directories and files
