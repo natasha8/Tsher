@@ -11,7 +11,6 @@ const Sidebar = () => {
 	const snap = useSnapshot(state);
 
 	const [file, setFile] = useState("");
-	console.log("file", file);
 
 	const [activeEditorTab, setActiveEditorTab] = useState("");
 	const [activeFilterTab, setActiveFilterTab] = useState({
@@ -116,7 +115,9 @@ const Sidebar = () => {
 					}),
 				}
 			);
+			console.log("RESPONSE", response);
 			const data = await response.json();
+			console.log("DATA", data);
 
 			handleDecals(type, `data:image/png;base64,${data.photo}`);
 		} catch (error) {
