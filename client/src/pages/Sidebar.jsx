@@ -105,7 +105,7 @@ const Sidebar = () => {
 			setGenImg(true);
 
 			const response = await fetch(
-				"https://api.render.com/deploy/srv-ci4rvvmnqqlf6bqdjjk0?key=77R3Em0I1KA/api/v1/dalle",
+				"https://tsher-3rp6.onrender.com/api/v1/dalle",
 				{
 					method: "POST",
 					headers: {
