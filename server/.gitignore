@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 pnpm-lock.yaml
+.env
+
 
 # Editor directories and files
 .vscode/*
@@ -19,7 +21,7 @@ pnpm-lock.yaml
 .idea
 .DS_Store
 *.suo
-*.ntvs*
+*.ntvs*git status
 *.njsproj
 *.sln
 *.sw?
