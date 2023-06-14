@@ -3,7 +3,6 @@ import { Canvas } from "@react-three/fiber";
 import CameraRig from "./CameraRing";
 import TShirt from "./TShirt";
 import Backdrop from "./Backdrop";
-import { AmbientLight } from "three";
 
 const Model = () => {
 	return (
@@ -13,7 +12,7 @@ const Model = () => {
 			gl={{ preserveDrawingBuffer: true }}
 			className="w-full max-w-full h-full transition-all ease-in "
 		>
-			<AmbientLight intensity={0.5} />
+			<ambientLight intensity={0.6} />
 			<Environment preset="city" />
 
 			<CameraRig>
