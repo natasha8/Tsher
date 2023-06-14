@@ -19,11 +19,6 @@ const Home = () => {
 							{" "}
 							tsher
 						</h1>
-						{/* <img
-							src="./robot.png"
-							alt="logo"
-							className="w-8 h-8 object-contain"
-						/> */}
 					</motion.header>
 					<motion.div
 						className="home-content"
