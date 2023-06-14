@@ -147,15 +147,22 @@ const Sidebar = () => {
 							</div>
 						</div>
 						<motion.div
-							className="absolute z-10 top-5 right-5"
+							className="absolute z-10 top-5 right-1.5"
 							{...fadeAnimation}
 						>
-							<img
-								src="/back.png"
-								alt="logo"
-								className="w-fit pl-4 py-2.5"
-								onClick={() => (state.intro = true)}
-							/>
+							{" "}
+							<Button
+								type="filled"
+								title={
+									<img
+										src="/back.png"
+										alt="logo"
+										className="w-fit p-0.5"
+										onClick={() => (state.intro = true)}
+									/>
+								}
+								customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+							></Button>
 						</motion.div>
 						<motion.div
 							className="filtertabs-container"
