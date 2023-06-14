@@ -98,6 +98,7 @@ const Sidebar = () => {
 	};
 
 	const handleSubmit = async (type) => {
+		console.log("PROMPT", prompt);
 		if (!prompt) return alert("Please enter a prompt");
 
 		try {

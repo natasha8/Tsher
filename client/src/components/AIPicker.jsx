@@ -1,8 +1,16 @@
 import Button from "./Button";
-const AIPicker = (prompt, handlePrompt, genImg, handleSubmit) => {
+
+const AIPicker = ({
+	prompt,
+	setPrompt,
+	genImg,
+	handleSubmit,
+	handlePrompt,
+}) => {
 	return (
 		<div className="aipicker-container">
 			<textarea
+				placeholder="Ask AI..."
 				rows={5}
 				value={prompt}
 				onChange={handlePrompt}
@@ -12,7 +20,7 @@ const AIPicker = (prompt, handlePrompt, genImg, handleSubmit) => {
 				{genImg ? (
 					<Button
 						type="outline"
-						title="Magic is happening..."
+						title="Asking AI..."
 						customStyles="text-xs"
 					/>
 				) : (
@@ -20,14 +28,14 @@ const AIPicker = (prompt, handlePrompt, genImg, handleSubmit) => {
 						<Button
 							type="outline"
 							title="AI Logo"
-							handleClick={() => handleSubmit("logo")}
+							handler={() => handleSubmit("logo")}
 							customStyles="text-xs"
 						/>
 
 						<Button
 							type="filled"
 							title="AI Full"
-							handleClick={() => handleSubmit("full")}
+							handler={() => handleSubmit("full")}
 							customStyles="text-xs"
 						/>
 					</>
